@@ -1,0 +1,11 @@
+div {
+    background: #ededed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+h1 {
+    color: #777777;
+}

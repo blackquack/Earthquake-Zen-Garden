@@ -1,0 +1,31 @@
+#profileRenderContainer {
+    color: #444444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profileContainer {
+    display: flex;
+    justify-content: center;
+}
+
+table tbody tr {
+    text-align: left;
+}
+
+table tbody tr td {
+    max-width: 200px;
+    padding: 5px;
+}
+
+table tbody tr th {
+    padding: 5px;
+    vertical-align: top;
+}
+
+img {
+    margin: 5px;
+    padding: 5px;
+}
