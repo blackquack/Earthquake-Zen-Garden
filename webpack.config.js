@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const OUTPUT_DIR = path.resolve(__dirname, 'docs');
 
 const htmlPlugin = new HtmlWebpackPlugin({
     template: "./src/index.html",
@@ -10,9 +11,9 @@ const htmlPlugin = new HtmlWebpackPlugin({
 module.exports = {
     entry: "./src",
     output: {
-        path: path.resolve(__dirname, "docs"),
+        path: OUTPUT_DIR,
         filename: "bundle.js",
-        publicPath: '/'
+        publicPath: '/Earthquake-Zen-Garden/'
     },
     module: {
         rules: [
@@ -40,6 +41,8 @@ module.exports = {
     ],
     devtool: 'source-map',
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+        contentBase: OUTPUT_DIR,
+        watchContentBase: true,
     }
 };
