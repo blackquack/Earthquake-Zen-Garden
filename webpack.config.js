@@ -13,7 +13,7 @@ module.exports = {
     output: {
         path: OUTPUT_DIR,
         filename: "bundle.js",
-        publicPath: '/Earthquake-Zen-Garden/'
+        publicPath: '/Earthquake-Zen-Garden'
     },
     module: {
         rules: [
@@ -34,6 +34,7 @@ module.exports = {
     },
     resolve: {
         extensions: ["*", ".js", ".jsx"],
+        roots: [__dirname],
     },
     plugins: [
         htmlPlugin,

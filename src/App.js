@@ -8,12 +8,6 @@ import Navbar from './components/Navbar/Navbar'
 import './App.css'
 
 class App extends Component {
-    // componentDidMount() {
-    //     fetch("/sampleData.json")
-    //         .then(data => data.json())
-    //         .then(data => console.log(data))
-    // }
-
     render() {
         return (
             <div>
