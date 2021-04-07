@@ -15,7 +15,7 @@ class Detail extends Component {
     componentDidMount() {
         const id = this.props.match.params.id
         
-        fetch("/sampleData.json")
+        fetch("../sampleData.json")
             .then(data => data.json())
             .then(data => data.data.features.find(item => item.id == id))
             .then(item => {

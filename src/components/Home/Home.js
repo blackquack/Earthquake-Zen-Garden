@@ -20,7 +20,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        fetch("/sampleData.json")
+        fetch("./sampleData.json")
             .then(data => data.json())
             .then(data => data.data)
             .then(data => {

@@ -12,7 +12,7 @@ class Profile extends Component {
     }
 
     componentDidMount() {
-        fetch("/sampleData.json")
+        fetch("./sampleData.json")
             .then(data => data.json())
             .then(data => data.profile)
             .then(profile => {
