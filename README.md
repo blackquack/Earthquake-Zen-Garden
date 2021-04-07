@@ -2,4 +2,4 @@
 
 ### A sample react application
 
-[Demo](test)
+[Demo](https://blackquack.github.io/Earthquake-Zen-Garden/)
